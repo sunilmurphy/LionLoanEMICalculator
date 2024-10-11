@@ -1,44 +1,72 @@
 {
-  "Lionstatus": {
-    "Lionappname": "Lion Loan EMI Calculator",
-    "Lionadstatus": 1,
-    "Lionadmob_adstatus": 1,
-    "Lionfacebook_adstatus": 0
-  },
-  "Lionadmob": {
-    "Lionappopen_id": "ca-app-pub-3940256099942544/9257395921",
-    "Lionbanner_id": "ca-app-pub-3940256099942544/2014213617",
-    "Lionnative_id": "/21775744923/example/native",
-    "Lioninterstitial_id": "/21775744923/example/interstitial"
-  },
-  "Lionfacebook": {
-    "Lionappopen_id": "ca-app-pub-3940256099942544/9257395921",
-    "Lionbanner_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
-    "Lionnative_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
-    "Lioninterstitial_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID"
-  },
-  "Lionfrequency_capping": {
-    "Lionfrequency_banner": "0",
-    "Lionfrequency_native": "0",
-    "Lionfrequency_interstitial": "0",
-    "Lionfrequency_Backinterstitial": "0",
-    "Lionfrequency_affiliate": "0"
-  },
-  "Lionextra": {
-    "LionprivacyPolicy": "https://smartappzones.blogspot.com/2024/10/privacy-policy.html",
-    "LioncontactUS": "https://forms.gle/pMcCuQXygsVMNCp59",
-    "Lionextrascreen": "1",
-    "LioninterAdDialog": 0,
-    "Lionnativebtn_up": 0,
-    "LionbannerTimer": 10000,
-    "Lionnativeclickupgrade": 1,
-    "Lionaffiliate_url": "null",
-    "LionfbAppID": "1470962580275628",
-    "LionfbClientID": "d6118464cccf48b190e2b97705e5d47f",
-    "LioncollapsizeBanner": 0,
-    "LionsomeTimeAgain": 0,
-    "LionbannerAltnativeShow": false,
-    "LionenableNotify": ""
-  },
-  "Lioncustom_banner": []
+    "Lionstatus": {
+        "Lionappname": "Lion Loan EMI Calculator",
+        "Lionadstatus": 1,
+        "Lionadmob_adstatus": 1,
+        "Lionfacebook_adstatus": 0
+    },
+    "Lionadmob": {
+        "Lionappopen_id": "ca-app-pub-3940256099942544/9257395921",
+        "Lionbanner_id": "ca-app-pub-3940256099942544/2014213617",
+        "Lionnative_id": "/21775744923/example/native",
+        "Lioninterstitial_id": "/21775744923/example/interstitial"
+    },
+    "Lionfacebook": {
+        "Lionappopen_id": "ca-app-pub-3940256099942544/9257395921",
+        "Lionbanner_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+        "Lionnative_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+        "Lioninterstitial_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID"
+    },
+    "Lionfrequency_capping": {
+        "Lionfrequency_banner": "0",
+        "Lionfrequency_native": "0",
+        "Lionfrequency_interstitial": "0",
+        "Lionfrequency_Backinterstitial": "0",
+        "Lionfrequency_affiliate": "0"
+    },
+    "Lionextra": {
+        "LionprivacyPolicy": "https://smartappzones.blogspot.com/2024/10/privacy-policy.html",
+        "LioncontactUS": "https://forms.gle/pMcCuQXygsVMNCp59",
+        "Lionextrascreen": "1",
+        "LioninterAdDialog": 0,
+        "Lionnativebtn_up": 0,
+        "LionbannerTimer": 10000,
+        "Lionnativeclickupgrade": 1,
+        "Lionaffiliate_url": "null",
+        "LionfbAppID": "1470962580275628",
+        "LionfbClientID": "d6118464cccf48b190e2b97705e5d47f",
+        "LioncollapsizeBanner": 0,
+        "LionsomeTimeAgain": 0,
+        "LionbannerAltnativeShow": false,
+        "LionenableNotify": ""
+    },
+    "LionInstallextra": {
+        "adstatus": 1,
+        "admob_adstatus": 1,
+        "facebook_adstatus": 0,
+        "appopen_id": "ca-app-pub-3940256099942544/9257395921",
+        "banner_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+        "native_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+        "interstitial_id": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+        "frequency_banner": "0",
+        "frequency_native": "0",
+        "frequency_interstitial": "0",
+        "frequency_Backinterstitial": "0",
+        "frequency_affiliate": "0",
+        "privacyPolicy": "https://smartappzones.blogspot.com/2024/10/privacy-policy.html",
+        "contactUS": "https://forms.gle/pMcCuQXygsVMNCp59",
+        "extrascreen": "1",
+        "interAdDialog": 0,
+        "nativebtn_up": 0,
+        "bannerTimer": 10000,
+        "nativeclickupgrade": 1,
+        "affiliate_url": "null",
+        "fbAppID": "1470962580275628",
+        "fbClientID": "d6118464cccf48b190e2b97705e5d47f",
+        "collapsizeBanner": 0,
+        "someTimeAgain": 0,
+        "bannerAltnativeShow": false,
+        "enableNotify": ""
+    },
+    "Lioncustom_banner": []
 }
