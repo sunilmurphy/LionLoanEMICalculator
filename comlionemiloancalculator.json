@@ -1,8 +1,8 @@
 {
     "Lionstatus": {
         "Lionappname": "Lion Loan EMI Calculator",
-        "Lionadstatus": 0,
-        "Lionadmob_adstatus": 0,
+        "Lionadstatus": 1,
+        "Lionadmob_adstatus": 1,
         "Lionfacebook_adstatus": 0
     },
     "Lionadmob": {
@@ -22,17 +22,17 @@
         "Lionfrequency_native": "5",
         "Lionfrequency_interstitial": "3",
         "Lionfrequency_Backinterstitial": "100",
-        "Lionfrequency_affiliate": "3"
+        "Lionfrequency_affiliate": "0"
     },
     "Lionextra": {
-        "LionprivacyPolicy": "https://smartappzones.blogspot.com/2024/10/privacy-policy.html",
-        "LioncontactUS": "https://forms.gle/pMcCuQXygsVMNCp59",
+        "LionprivacyPolicy": "https://lianloanemicalculator.blogspot.com/2024/10/privacy-policy.html",
+        "LioncontactUS": "https://lianloanemicalculator.blogspot.com/",
         "Lionextrascreen": "0",
         "LioninterAdDialog": 0,
         "Lionnativebtn_up": 0,
         "LionbannerTimer": 10000,
         "Lionnativeclickupgrade": 0,
-        "Lionaffiliate_url": "https://1106.go.mglgamez.com/pregames",
+        "Lionaffiliate_url": "null",
         "LionfbAppID": "1234",
         "LionfbClientID": "5678",
         "userTracking": 0,
