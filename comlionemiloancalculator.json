@@ -1,75 +1,103 @@
 {
-    "Lionstatus": {
-        "Lionappname": "Lion Loan EMI Calculator",
-        "Lionadstatus": 1,
-        "Lionadmob_adstatus": 1,
-        "Lionfacebook_adstatus": 0
+  "Lionstatus": {
+    "Lionappname": "Lion Loan EMI Calculator",
+    "Lionadstatus": 1,
+    "Lionadmob_adstatus": 1,
+    "Lionfacebook_adstatus": 0
+  },
+  "Lionadmob": {
+    "Lionappopen_id": "",
+    "Lionbanner_id": "",
+    "Lionnative_id": "",
+    "Lioninterstitial_id": ""
+  },
+  "Lionfacebook": {
+    "Lionappopen_id": "",
+    "Lionbanner_id": "",
+    "Lionnative_id": "",
+    "Lioninterstitial_id": ""
+  },
+  "Lionfrequency_capping": {
+    "Lionfrequency_banner": "0",
+    "Lionfrequency_native": "0",
+    "Lionfrequency_interstitial": "0",
+    "Lionfrequency_Backinterstitial": "0",
+    "Lionfrequency_affiliate": "3"
+  },
+  "Lionextra": {
+    "LionprivacyPolicy": "https://lianloanemicalculator.blogspot.com/2024/10/privacy-policy.html",
+    "LioncontactUS": "https://lianloanemicalculator.blogspot.com/",
+    "Lionextrascreen": "1",
+    "LioninterAdDialog": 0,
+    "Lionnativebtn_up": 0,
+    "LionbannerTimer": 2000,
+    "Lionnativeclickupgrade": 0,
+    "Lionaffiliate_url": "https://1106.go.mglgamez.com/pregames",
+    "LionfbAppID": "1234",
+    "LionfbClientID": "5678",
+    "userTracking": 0,
+    "userTrackingURL": "",
+    "userTrackingType": 0,
+    "LioncollapsizeBanner": 1,
+    "LionsomeTimeAgain": 0,
+    "LionbannerAltnativeShow": false,
+    "LionenableNotify": "eb6421a9-e2aa-451c-8587-3ae2ea20dc6d"
+  },
+  "LionInstallextra": {
+    "adstatus": 0,
+    "admob_adstatus": 0,
+    "facebook_adstatus": 0,
+    "admob_appopen_id": "",
+    "admob_banner_id": "",
+    "admob_native_id": "",
+    "admob_interstitial_id": "",
+    "fb_appopen_id": "",
+    "fb_banner_id": "",
+    "fb_native_id": "",
+    "fb_interstitial_id": "",
+    "frequency_banner": "0",
+    "frequency_native": "0",
+    "frequency_interstitial": "0",
+    "frequency_Backinterstitial": "0",
+    "frequency_affiliate": "0",
+    "extrascreen": "0",
+    "interAdDialog": 0,
+    "nativebtn_up": 0,
+    "bannerTimer": 10000,
+    "nativeclickupgrade": 0,
+    "affiliate_url": "null",
+    "collapsizeBanner": 0,
+    "someTimeAgain": 0,
+    "bannerAltnativeShow": false,
+    "enableNotify": ""
+  },
+  "Lioncustom_banner": [
+    {
+      "adIcon": "https://suhankhan9633.github.io/emiloancalculator/adr1.gif",
+      "adTitle": "Play & Win Coins Daily",
+      "adBanner": "https://suhankhan9633.github.io/emiloancalculator/adn1.png",
+      "adBannerIOG": true,
+      "adButtonName": "Play Now",
+      "adActionURL": "https://1106.go.mglgamez.com/pregames",
+      "adApporWeb": false
     },
-    "Lionadmob": {
-        "Lionappopen_id": "ca-app-pub-3940256099942544/9257395921",
-        "Lionbanner_id": "ca-app-pub-3940256099942544/2014213617",
-        "Lionnative_id": "/21775744923/example/native",
-        "Lioninterstitial_id": "/21775744923/example/interstitial"
+    {
+      "adIcon": "https://suhankhan9633.github.io/emiloancalculator/adr2.gif",
+      "adTitle": "Pool prize is 50,000 coins",
+      "adBanner": "https://suhankhan9633.github.io/emiloancalculator/adn2.png",
+      "adBannerIOG": true,
+      "adButtonName": "Win Now",
+      "adActionURL": "https://1106.go.mglgamez.com/pregames",
+      "adApporWeb": false
     },
-    "Lionfacebook": {
-        "Lionappopen_id": "",
-        "Lionbanner_id": "",
-        "Lionnative_id": "",
-        "Lioninterstitial_id": ""
-    },
-    "Lionfrequency_capping": {
-        "Lionfrequency_banner": "2",
-        "Lionfrequency_native": "5",
-        "Lionfrequency_interstitial": "3",
-        "Lionfrequency_Backinterstitial": "100",
-        "Lionfrequency_affiliate": "0"
-    },
-    "Lionextra": {
-        "LionprivacyPolicy": "https://lianloanemicalculator.blogspot.com/2024/10/privacy-policy.html",
-        "LioncontactUS": "https://lianloanemicalculator.blogspot.com/",
-        "Lionextrascreen": "0",
-        "LioninterAdDialog": 0,
-        "Lionnativebtn_up": 0,
-        "LionbannerTimer": 10000,
-        "Lionnativeclickupgrade": 0,
-        "Lionaffiliate_url": "null",
-        "LionfbAppID": "1234",
-        "LionfbClientID": "5678",
-        "userTracking": 0,
-        "userTrackingURL": "",
-        "userTrackingType": 0,
-        "LioncollapsizeBanner": 0,
-        "LionsomeTimeAgain": 0,
-        "LionbannerAltnativeShow": false,
-        "LionenableNotify": ""
-    },
-    "LionInstallextra": {
-        "adstatus": 0,
-        "admob_adstatus": 0,
-        "facebook_adstatus": 0,
-        "admob_appopen_id": "",
-        "admob_banner_id": "",
-        "admob_native_id": "",
-        "admob_interstitial_id": "",
-        "fb_appopen_id": "",
-        "fb_banner_id": "",
-        "fb_native_id": "",
-        "fb_interstitial_id": "",
-        "frequency_banner": "0",
-        "frequency_native": "0",
-        "frequency_interstitial": "0",
-        "frequency_Backinterstitial": "0",
-        "frequency_affiliate": "0",
-        "extrascreen": "0",
-        "interAdDialog": 0,
-        "nativebtn_up": 0,
-        "bannerTimer": 10000,
-        "nativeclickupgrade": 0,
-        "affiliate_url": "null",
-        "collapsizeBanner": 0,
-        "someTimeAgain": 0,
-        "bannerAltnativeShow": false,
-        "enableNotify": ""
-    },
-    "Lioncustom_banner": []
+    {
+      "adIcon": "https://suhankhan9633.github.io/emiloancalculator/adr3.gif",
+      "adTitle": "Aaj Game khela kya?",
+      "adBanner": "https://suhankhan9633.github.io/emiloancalculator/adn3.png",
+      "adBannerIOG": true,
+      "adButtonName": "Play Game",
+      "adActionURL": "https://1106.go.mglgamez.com/pregames",
+      "adApporWeb": false
+    }
+  ]
 }
