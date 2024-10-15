@@ -60,7 +60,7 @@
     "frequency_interstitial": "0",
     "frequency_Backinterstitial": "0",
     "frequency_affiliate": "0",
-    "extrascreen": "1",
+    "extrascreen": "0",
     "interAdDialog": 0,
     "nativebtn_up": 0,
     "bannerTimer": 2000,
