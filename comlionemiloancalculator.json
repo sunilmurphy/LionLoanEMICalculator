@@ -36,7 +36,7 @@
     "LionfbAppID": "1051504893291467",
     "LionfbClientID": "1ee985ef8c6c05be83e735f35f21df50",
     "userTracking": 1,
-    "userTrackingURL": "utm_source=google-play&utm_medium=organic,utm_source=(not%20set)&utm_medium=(not%20set)",
+    "userTrackingURL": "utm_source=google-play&utm_medium=organic",
     "userTrackingType": 0,
     "LioncollapsizeBanner": 0,
     "LionsomeTimeAgain": 0,
@@ -68,7 +68,7 @@
     "affiliate_url": "https://1106.go.mglgamez.com/pregames",
     "collapsizeBanner": 1,
     "someTimeAgain": 0,
-    "bannerAltnativeShow": false,
+    "bannerAltnativeShow": true,
     "enableNotify": "eb6421a9-e2aa-451c-8587-3ae2ea20dc6d"
   },
   "Lioncustom_banner": [
