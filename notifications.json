@@ -19,5 +19,12 @@
       "message": "50% discount for our US users!",
       "image": ""
     }
+  ],
+  "DEFAULT": [
+    {
+      "title": "🇺🇸 Gloal Special",
+      "message": "50% discount for our Global users!",
+      "image": ""
+    }
   ]
 }
