@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Enhanced Cookie Consent Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+    color: #333;
+  }
+  h1, h2 {
+    color: #2c3e50;
+  }
+  #cookieConsentBanner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #34495e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1000;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+    font-size: 16px;
+  }
+  #cookieConsentBanner select {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+  }
+  #cookieConsentBanner button {
+    padding: 8px 16px;
+    background: #27ae60;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #cookieConsentBanner button:hover {
+    background: #2ecc71;
+  }
+  #cookiesDisplay {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: monospace;
+  }
+  #clearCookiesBtn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #clearCookiesBtn:hover {
+    background: #e74c3c;
+  }
+</style>
+</head>
+<body>
+
+<h1>Welcome to Our Enhanced Demo Site</h1>
+
+<p>This site uses cookies to remember your staff interest and your consent preferences.</p>
+
+<div id="cookieConsentBanner" style="display:none;">
+  <label for="interestSelect">Choose your interest:</label>
+  <select id="interestSelect">
+    <option value="finance">Finance</option>
+    <option value="marketing">Marketing</option>
+    <option value="development">Development</option>
+    <option value="design">Design</option>
+  </select>
+  <button id="acceptCookiesBtn">Accept Cookies</button>
+</div>
+
+<h2>Current Cookies and Expiry</h2>
+<pre id="cookiesDisplay">(loading...)</pre>
+<button id="clearCookiesBtn">Clear All Cookies</button>
+
+<script>
+  // Helper to get cookie value by name
+  function getCookie(name) {
+    let value = "; " + document.cookie;
+    let parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";").shift();
+    return "";
+  }
+
+  // Helper to set cookie with optional max-age (seconds)
+  function setCookie(name, value, maxAgeSeconds = 60 * 60 * 24 * 365) {
+    let cookieStr = `${name}=${value}; max-age=${maxAgeSeconds}; path=/; SameSite=Lax; Secure`;
+    document.cookie = cookieStr;
+  }
+
+  // Helper to delete a cookie
+  function deleteCookie(name) {
+    document.cookie = `${name}=; max-age=0; path=/; SameSite=Lax; Secure`;
+  }
+
+  // Parse cookies and show their values and expiry (expiry not always accessible in JS)
+  function updateCookiesDisplay() {
+    let cookies = document.cookie ? document.cookie.split("; ") : [];
+    if (cookies.length === 0) {
+      document.getElementById("cookiesDisplay").textContent = "(no cookies)";
+      return;
+    }
+    let lines = cookies.map(c => c);
+    document.getElementById("cookiesDisplay").textContent = lines.join("\n");
+  }
+
+  // Show banner only if consent not given
+  function checkConsent() {
+    if (!getCookie("cookieConsentAccepted")) {
+      document.getElementById("cookieConsentBanner").style.display = "flex";
+    } else {
+      document.getElementById("cookieConsentBanner").style.display = "none";
+      updateCookiesDisplay();
+    }
+  }
+
+  // On Accept button clicked
+  document.getElementById("acceptCookiesBtn").addEventListener("click", function () {
+    const selectedInterest = document.getElementById("interestSelect").value;
+
+    // Save consent cookie (1 year)
+    setCookie("cookieConsentAccepted", "true");
+
+    // Save staff interest cookie
+    setCookie("staffInterest", selectedInterest);
+
+    // Hide banner
+    document.getElementById("cookieConsentBanner").style.display = "none";
+
+    // Fire event for external listeners
+    window.cookieConsentAccepted = true;
+    const event = new Event('cookieConsentGiven');
+    document.dispatchEvent(event);
+
+    updateCookiesDisplay();
+  });
+
+  // Clear cookies button clears consent + staffInterest cookies
+  document.getElementById("clearCookiesBtn").addEventListener("click", function () {
+    deleteCookie("cookieConsentAccepted");
+    deleteCookie("staffInterest");
+    updateCookiesDisplay();
+    checkConsent();
+  });
+
+  // On load
+  window.onload = function () {
+    checkConsent();
+    updateCookiesDisplay();
+  };
+</script>
+
+</body>
+</html>
